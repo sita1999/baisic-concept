@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class abc{
 String name;
 int num;
@@ -12,9 +14,19 @@ void display()
 }
 public class oops {
 public static void main(String[] args) {
-	abc dbc=new abc("vfgfgf",78);
-	abc efg=new abc("www" ,45);
-	abc igh=new abc("vvv",56);
+	Scanner input=new Scanner( System.in);
+	System.out.println("Enter String ");
+	String name=input.nextLine();
+	System.out.println("Enter Int ");
+	int n=input.nextInt();
+
+	abc dbc=new abc(name,n);
+	System.out.println("Enter String ");
+	name=input.nextLine();
+	System.out.println("Enter int ");
+	n=input.nextInt();
+	abc efg=new abc(name ,n);
+	abc igh=new abc(name,n);
 dbc.display();
 	efg.display();
 	igh.display();
