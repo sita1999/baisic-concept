@@ -1,9 +1,9 @@
 class abc{
 String name;
 int num;
-void putdata(String str,int a) {
-name=str;
-num=a;	
+abc(String y,int z){
+	name=y;
+	num=z;	
 }
 void display()
 {
@@ -12,15 +12,11 @@ void display()
 }
 public class oops {
 public static void main(String[] args) {
-	abc dbc=new abc();
-	abc efg=new abc();
-	abc igh=new abc();
-dbc.putdata("asus",4);
-efg.putdata("sita" ,5);
-igh.putdata("saloni", 6);
+	abc dbc=new abc("vfgfgf",78);
+	abc efg=new abc("www" ,45);
+	abc igh=new abc("vvv",56);
 dbc.display();
 	efg.display();
 	igh.display();
 }
-
 }
