@@ -25,7 +25,7 @@ public class Main{
 				sa[i].display();
 			break;
 			case 3:
-				System.out.print("enter the name");
+				System.out.println("enter the name");
 				String na=sc1.nextLine();
 				int f=0;
 				for(int i=0;i<count; i++) {
@@ -35,12 +35,12 @@ public class Main{
 					}
 				
 				if(f==0)
-					System.out.print("result not found");
+					System.out.println("result not found");
 				else
-					System.out.print("result found");
+					System.out.println("result found");
 			break;
 			case 4:
-				System.out.print("enter the name");
+				System.out.println("enter the name");
 				String n1=sc1.nextLine();
 				int f1=0;
 				for(int i=0;i<count; i++) {
@@ -54,9 +54,9 @@ public class Main{
 				}
 				}
 				if(f1==0)
-					System.out.print("result not found");
+					System.out.println("result not found");
 				else
-					System.out.print("result found");
+					System.out.println("result found");
 				
 			break;
 			case 5:
