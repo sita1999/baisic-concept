@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Main{
+	
 	public static void main(String[]args) {
 		Scanner sc= new Scanner(System.in);
 		Scanner sc1= new Scanner(System.in);
@@ -11,7 +12,8 @@ public class Main{
 			System.out.println("2.DISPLAY");
 			System.out.println("3.SEARCH");
 			System.out.println("4.DELETE");
-			System.out.println("5.EXIT");
+			System.out.print("5.SORTING");
+		System.out.println("6.EXIT");
 			System.out.print("Enter your choice:");
 			Choice =sc.nextInt();
 			switch (Choice) {
@@ -60,6 +62,25 @@ public class Main{
 				
 			break;
 			case 5:
+				System.out.println("sorting");
+				String temp;
+				for(int i=0;i<count;i++) {
+					for(int j=i+1; j<count;j++)
+					{
+						if(sa[i].holder_name.compareTo(sa[j].holder_name)>0)
+						{
+							temp=sa[i].holder_name;
+						
+							sa[i].holder_name=sa[j].holder_name;
+							sa[j].holder_name=temp;
+						}
+						System.out.print("names is sorted order:");
+						
+					}					
+				}
+			break;
+				
+				case 6:
 			System.out.println("bye");
 			System.exit(0);
 			default:
@@ -76,9 +97,7 @@ class Account{
 		holder_name =sc.nextLine();
 		System.out.print("balance");
 		balance = sc.nextDouble();
-		
-		
-	}
+		}
 	void display() {
 		System.out.println(holder_name+"    "+balance);
 		
