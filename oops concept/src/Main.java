@@ -74,10 +74,9 @@ public class Main{
 							sa[i].holder_name=sa[j].holder_name;
 							sa[j].holder_name=temp;
 						}
-						System.out.print("names is sorted order:");
-						
-					}					
+						}					
 				}
+				System.out.print("names is sorted order:");
 			break;
 				
 				case 6:
